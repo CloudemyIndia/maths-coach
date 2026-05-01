@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mathscoach.in/sitemap.xml

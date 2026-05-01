@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://mathscoach.in/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://mathscoach.in/courses/</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://mathscoach.in/about/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://mathscoach.in/contact/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://mathscoach.in/courses/maths-class-11-12/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://mathscoach.in/courses/maths-class-9-10/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://mathscoach.in/courses/science-class-9-10/</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://mathscoach.in/courses/cbse-board-preparation/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://mathscoach.in/courses/up-board-preparation/</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+</urlset>
