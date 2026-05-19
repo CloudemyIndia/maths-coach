@@ -23,11 +23,13 @@
   var hdr = document.getElementById("site-header");
   if (hdr) {
     hdr.innerHTML =
-      '<nav class="site-nav" role="navigation" aria-label="Main navigation"><div class="container nav-inner"><a href="/" class="nav-logo" aria-label="Mathematical Study Point Home"><div class="nav-logo-icon" aria-hidden="true">M</div><span style="gap: 3px;">Mathematical Study Point<span class="logo-sub">Since 2003 &middot; Lakhimpur Kheri</span></span></a><div class="nav-links"><a href="/"' +
+      '<nav class="site-nav" role="navigation" aria-label="Main navigation"><div class="container nav-inner"><a href="/" class="nav-logo" aria-label="Mathematical Study Point Home"><div class="nav-logo-icon" aria-hidden="true">M</div><span style="gap: 3px;">Mathematical Study Point<span class="logo-sub">Since 2001 &middot; Lakhimpur</span></span></a><div class="nav-links"><a href="/"' +
       (isA("/") ? ' class="active"' : "") +
       '>Home</a><a href="/courses/"' +
       (isA("/courses") ? ' class="active"' : "") +
-      '>Courses</a><a href="/about/"' +
+      '>Courses</a><a href="/results/"' +
+      (isA("/results") ? ' class="active"' : "") +
+      '>Results</a><a href="/about/"' +
       (isA("/about") ? ' class="active"' : "") +
       '>About</a><a href="/contact/"' +
       (isA("/contact") ? ' class="active"' : "") +
@@ -39,7 +41,7 @@
   var mob = document.getElementById("mobile-menu-slot");
   if (mob) {
     mob.innerHTML =
-      '<div class="mobile-menu" id="mob-menu" role="dialog" aria-label="Mobile navigation"><a href="/">Home</a><a href="/courses/">Courses</a><a href="/courses/maths-class-11-12/">Maths 11th-12th</a><a href="/courses/maths-class-9-10/">Maths 9th-10th</a><a href="/courses/science-class-9-10/">Science 9th-10th</a><a href="/courses/cbse-board-preparation/">CBSE Preparation</a><a href="/courses/up-board-preparation/">UP Board Preparation</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/contact/" class="btn btn-primary btn-lg">Enquire Now ' +
+      '<div class="mobile-menu" id="mob-menu" role="dialog" aria-label="Mobile navigation"><a href="/">Home</a><a href="/courses/">Courses</a><a href="/courses/maths-class-11-12/">Maths 11th-12th</a><a href="/courses/maths-class-9-10/">Maths &amp; Science 9th-10th</a><a href="/courses/cbse-board-preparation/">CBSE Preparation</a><a href="/courses/up-board-preparation/">UP Board Preparation</a><a href="/results/">Board Results</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/contact/" class="btn btn-primary btn-lg">Enquire Now ' +
       IC.arrow +
       "</a></div>";
   }
@@ -47,17 +49,17 @@
   var ftr = document.getElementById("site-footer");
   if (ftr) {
     ftr.innerHTML =
-      '<footer class="site-footer" role="contentinfo"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="/" class="nav-logo" aria-label="Mathematical Study Point Home"><div class="nav-logo-icon" aria-hidden="true">M</div><span style="gap: 3px;">Mathematical Study Point<span class="logo-sub">Since 2003</span></span></a><p>Trusted maths and science coaching center in Lakhimpur Kheri, building strong academic foundations for students of Class 9th to 12th since 2003.</p></div><div><div class="footer-heading">Quick Links</div><div class="footer-links"><a href="/">Home</a><a href="/courses/">All Courses</a><a href="/about/">About Us</a><a href="/contact/">Contact Us</a></div></div><div><div class="footer-heading">Our Courses</div><div class="footer-links"><a href="/courses/maths-class-11-12/">Maths (11th-12th)</a><a href="/courses/maths-class-9-10/">Maths (9th-10th)</a><a href="/courses/science-class-9-10/">Science (9th-10th)</a><a href="/courses/cbse-board-preparation/">CBSE Preparation</a><a href="/courses/up-board-preparation/">UP Board Preparation</a></div></div><div><div class="footer-heading">Contact Us</div><div class="footer-contact-item">' +
+      '<footer class="site-footer" role="contentinfo"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="/" class="nav-logo" aria-label="Mathematical Study Point Home"><div class="nav-logo-icon" aria-hidden="true">M</div><span style="gap: 3px;">Mathematical Study Point<span class="logo-sub">Since 2001</span></span></a><p>Trusted maths and science coaching center in Lakhimpur, building strong academic foundations for students of Class 9th to 12th since 2001.</p></div><div><div class="footer-heading">Quick Links</div><div class="footer-links"><a href="/">Home</a><a href="/courses/">All Courses</a><a href="/results/">Board Results</a><a href="/about/">About Us</a><a href="/contact/">Contact Us</a></div></div><div><div class="footer-heading">Our Courses</div><div class="footer-links"><a href="/courses/maths-class-11-12/">Maths (11th-12th)</a><a href="/courses/maths-class-9-10/">Maths &amp; Science (9th-10th)</a><a href="/courses/cbse-board-preparation/">CBSE Preparation</a><a href="/courses/up-board-preparation/">UP Board Preparation</a></div></div><div><div class="footer-heading">Contact Us</div><div class="footer-contact-item">' +
       IC.pin +
-      '<span>Near Bus Stand, Lakhimpur Kheri, Uttar Pradesh 262701</span></div><div class="footer-contact-item">' +
+      '<span>Near Bus Stand, Lakhimpur, Uttar Pradesh 262701</span></div><div class="footer-contact-item">' +
       IC.phone +
       '<a href="tel:+919999999999">+91 99999 99999</a></div><div class="footer-contact-item">' +
       IC.mail +
       '<a href="mailto:info@mathscoach.in">info@mathscoach.in</a></div><div class="footer-contact-item">' +
       IC.clock +
-      '<span>Mon - Sat: 7:00 AM - 8:00 PM</span></div></div></div><div class="footer-bottom">&copy; ' +
+      '<span>Mon - Sat: 10:00 AM - 7:00 PM</span></div></div></div><div class="footer-bottom">&copy; ' +
       new Date().getFullYear() +
-      " Mathematical Study Point, Lakhimpur Kheri. All rights reserved.</div></div></footer>";
+      " Mathematical Study Point, Lakhimpur. All rights reserved.</div></div></footer>";
   }
 
   var hbg = document.getElementById("hbg"),

@@ -1,0 +1,298 @@
+/* ============================================
+   MATHEMATICAL STUDY POINT — Results Styles
+   ============================================ */
+
+/* ===== RESULT CARD ===== */
+.result-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+  transition: all var(--duration) var(--ease);
+  text-align: center;
+  position: relative;
+}
+.result-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+  border-color: var(--blue-pale);
+}
+
+/* Top accent bar */
+.result-card-bar {
+  height: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--accent));
+}
+.result-card.rank-gold .result-card-bar { background: linear-gradient(90deg, #f59e0b, #fcd34d); }
+.result-card.rank-silver .result-card-bar { background: linear-gradient(90deg, #64748b, #94a3b8); }
+.result-card.rank-bronze .result-card-bar { background: linear-gradient(90deg, #b45309, #d97706); }
+
+.result-card-body {
+  padding: 1.375rem 1.125rem 1.25rem;
+}
+
+/* ===== TOPPER BADGE ===== */
+.topper-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.275rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--font-heading);
+  margin-bottom: 0.875rem;
+  line-height: 1;
+}
+.topper-badge.gold {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+.topper-badge.silver {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+.topper-badge.bronze {
+  background: #fff7ed;
+  color: #9a3412;
+  border: 1px solid #fdba74;
+}
+.topper-badge-placeholder {
+  display: block;
+  height: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+
+/* ===== PHOTO WRAPPER ===== */
+.result-photo-wrap {
+  position: relative;
+  width: 76px;
+  margin: 0 auto 0.875rem;
+}
+.result-photo {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--white);
+  font-family: var(--font-heading);
+  background: linear-gradient(135deg, var(--blue), var(--blue-light));
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 2px var(--gray-200), 0 4px 12px rgba(15, 27, 61, 0.12);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.result-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.result-card.rank-gold .result-photo {
+  background: linear-gradient(135deg, #f59e0b, #fcd34d);
+  box-shadow: 0 0 0 2px #fde68a, 0 4px 16px rgba(245, 158, 11, 0.3);
+}
+.result-card.rank-silver .result-photo {
+  background: linear-gradient(135deg, #64748b, #94a3b8);
+  box-shadow: 0 0 0 2px #cbd5e1, 0 4px 12px rgba(15, 27, 61, 0.15);
+}
+.result-card.rank-bronze .result-photo {
+  background: linear-gradient(135deg, #b45309, #d97706);
+  box-shadow: 0 0 0 2px #fdba74, 0 4px 12px rgba(180, 83, 9, 0.25);
+}
+
+/* Rank medal on photo */
+.result-rank-medal {
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--white);
+  border: 2px solid var(--white);
+  line-height: 1;
+}
+.result-rank-medal.gold   { background: #f59e0b; }
+.result-rank-medal.silver { background: #64748b; }
+.result-rank-medal.bronze { background: #c2410c; }
+.result-rank-medal.blue   { background: var(--blue); }
+
+/* ===== MARKS ===== */
+.result-marks {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1;
+  margin-bottom: 0.15rem;
+}
+.result-card.rank-gold .result-marks { color: #d97706; }
+.result-marks span {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--gray-400);
+}
+.result-subject-lbl {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* ===== NAME & ROLL ===== */
+.result-name {
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+.result-roll {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ===== RESULTS GRID ===== */
+.results-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.125rem;
+}
+.results-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+/* ===== HOME RESULTS SECTION ===== */
+.results-home-section {
+  position: relative;
+  overflow: hidden;
+}
+.results-home-section.class-12 { background: var(--gray-50); }
+.results-home-section.class-10 { background: var(--white); }
+
+.results-section-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.625rem;
+}
+.results-year-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.275rem 0.875rem;
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  letter-spacing: 0.04em;
+}
+.results-class-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.275rem 0.875rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  letter-spacing: 0.04em;
+}
+.results-class-chip.c12 { background: var(--blue-pale); color: var(--blue); }
+.results-class-chip.c10 { background: var(--amber-light); color: var(--amber-dark); }
+
+/* ===== FULL RESULTS PAGE ===== */
+.results-page-year-block {
+  margin-bottom: 3.5rem;
+}
+.results-page-year-block:last-child { margin-bottom: 0; }
+
+.results-page-year-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--gray-100);
+}
+.results-page-year-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin: 0;
+}
+
+.results-stats-bar {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-200);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.results-stat-item { text-align: center; }
+.results-stat-item .r-num {
+  font-family: var(--font-heading);
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1;
+}
+.results-stat-item .r-lbl {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.2rem;
+}
+
+.results-divider {
+  height: 2px;
+  background: var(--gray-100);
+  border-radius: 2px;
+  margin: 3.5rem 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .results-grid-5 { grid-template-columns: repeat(3, 1fr); }
+  .results-grid-4 { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .results-grid-5,
+  .results-grid-4 { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+}
+@media (max-width: 480px) {
+  .results-grid-5,
+  .results-grid-4 { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  .result-photo-wrap { width: 62px; }
+  .result-photo { width: 62px; height: 62px; font-size: 1.125rem; }
+  .result-marks { font-size: 1.625rem; }
+  .result-card-body { padding: 1rem 0.75rem; }
+  .results-page-year-title { font-size: 1.25rem; }
+}
